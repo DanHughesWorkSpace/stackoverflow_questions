@@ -32,7 +32,7 @@
 
 # I would have like to add some functionality to the project.
 ## Routing to stackoverflow link
-## Hover functionality on certain aspects (user image to display 'OWNER')
+## Hover functionality on certain aspects (user image to display 'OWNER', hovering over an individual card item to change color using ngClass)
 ## Extra slides
 ## Filter functionality to let the user return top X questions.
 ### simple text area with a button. I would allow getTopTenQuestions() functions to take a paramter of type number, and add this to the already existing string. example for top 20 would be 'https://api.stackexchange.com/2.3/questions?pagesize=20&fromdate=1641168000&todate=1684454400&order=desc&sort=activity&site=stackoverflow'.
