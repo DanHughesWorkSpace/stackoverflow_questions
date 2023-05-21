@@ -1,0 +1,52 @@
+<div class="content-container">
+    <div class="question-container" *ngFor="let item of topTenQuestions; let i = index">
+        <div class="question-card">
+            <div class="question-rank">
+                <p class="question-rank-text">#{{i+1}}</p>
+                <div class="vr"></div>
+            </div>
+            <div class="question-content">
+                <div class="question-summary">
+                    <div class="title-section">
+                        <p class="question-title">{{item.title}}</p>
+                        <img class="link-icon" src="/assets/question-svg/link-icon.svg" />
+                    </div>
+                    <div class="owner-information flex-align-center">
+                        <img class="user-profile-img" src="{{item.owner.profile_image}}" />
+
+                        <p class="username-text flex-align-center">{{item.owner.display_name}}</p>
+                        <div class="vr"></div>
+                        <div class="owner-reputation">
+                            <img class="reputation-icon" src="/assets/question-svg/reputation.svg" />
+                            <div class="reputation-text flex-col-align-center">
+                                <p class="figure-text">{{item.owner.reputation}}</p>
+                                <p>REPUTATION</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        {{item.tags}}
+                    </div>
+                </div>
+                <div class="question-metadata">
+                    <div class="question-answers-and-views">
+                        <div class="box-container answers flex-col-align-center">
+
+                            <p class="sub-text">{{item.answer_count}}</p>
+                            <p>ANSWERS</p>
+                        </div>
+                        <div class="box-container views flex-col-align-center">
+                            <p class="sub-text">{{item.view_count}}</p>
+                            <p>VIEWS</p>
+                        </div>
+                    </div>
+                    <div class="view-link flex-justify-align-center">
+                        <p>View</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hr"></div>
+    </div>
+
+</div>
